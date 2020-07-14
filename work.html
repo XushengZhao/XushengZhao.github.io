@@ -18,6 +18,7 @@
     .margintop {
         margin-top: 5em;
     }
+
 </style>
 <html lang="en">
 <head>
@@ -37,7 +38,9 @@
                 <img src="./pictures/Qsnapdragon.jpg" alt="Qsnapdragon logo" class="img-thumbnail float-left" width="300" height="300">
             </div>
             <div class="col-6 margintop ml-auto" style="background-color:white">
-                <p style="color:black">At qualcomm I was a hardware engineer</p>
+                <h4 style="color:black">Qualcomm</h4>
+                <h5>Design Verification Engineer</h5>
+                <h6>Skills / Languages: ARM Architecture, Baremetal OS, C/C++, System Verilog/Verilog, UVM</h6>
             </div>
         </div>
         <div class="row" style="margin-right:1em;margin-left:1em">
@@ -45,7 +48,9 @@
                 <img src="./pictures/basic_strategies.png" alt="Backtest strategy graph" class="img-thumbnail float-left">
             </div>
             <div class="col-6 margintop ml-auto" style="background-color:white">
-                <p style="color:black">Backtest platform experience</p>
+                <h4 style="color:black">Stock Backtest platform</h4>
+                <h5>Self Project</h5>
+                <h6>Skills / Languages: Python, Object-oriented programming</h6>
             </div>
         </div>
         <div class="row" style="margin-right:1em;margin-left:1em">
@@ -53,19 +58,34 @@
                 <img src="./pictures/hp_logo.png" alt="HP logo" class="img-thumbnail float-left" width="350" height="350">
             </div>
             <div class="col-6 margintop ml-auto" style="background-color:white">
-                <p style="color:black">HP work experience here</p>
+                <h4 style="color:black">HP Inc.</h4>
+                <h5>Asic Design Engineer</h5>
+                <h6>Skills / Languages: FPGA, ASIC flow, Firmware development, System Verilog/Verilog</h6>
             </div>
         </div>
         <div class="row" style="margin-right:1em;margin-left:1em">
             <div class="col-5 margintop" style="margin-left:4em">
-                <img src="./pictures/comp_arch.jpg" alt="HP logo" class="img-thumbnail float-left">
+                <button type="button" data-toggle="modal" data-target="#exampleModal">
+                    <img id="imageresource" src="./pictures/comp_arch.jpg" alt="Datapath Design" style="width:48em;height:18em">
+                </button>
             </div>
             <div class="col-6 margintop ml-auto" style="background-color:white">
-                <p style="color:black">Computer Architecture Project </p>
+                <h4 style="color:black">In-order LC3 CPU</h4>
+                <h5>School CPU project</h5>
+                <h6>Languages / Skills: System Verilog, Verilog, Computer Architecture</h6>
+                <p>Design of a 5-stage in-order CPU with I/D L1 cache and unified L2 cache conforming to the LC-3b ISA.</p>
+                <p>In my computer architecture class, 2 others and I was tasked with designing the highest performing CPU conforming to the LC-3b ISA. Performance ranking amongst peers was one of the criteras for grading as well as, obviously, correctness. </p>
+                <p>I worked primarily on the design of the datapath section, while my partners worked on the cache design and performance measurement</p>
+                <p>Achievements:</p>
+                <ul>
+                    <li>Implemented a dynamic branch predictor using the GAp prediction scheme with 8 way full associatve BTB, increasing performance by 25%</li>
+                    <li>Increased max frequency by analyzing critical path timing</li>
+                    <li>CPU design performance ranked top 10 in semester amonst 30ish teams</li>
+                </ul>
             </div>
         </div>
-        <div class="row" style="margin-left:1em;padding-top:12em;padding-left:2em">
-            <div class="col-4" style="margin-left:15em; padding-left:5em">
+        <div class="row" style="margin-left:1em;padding-top:5em;padding-left:2em;margin-bottom:3em">
+            <div class="col-4" style="margin-left:13em; padding-left:5em">
                 <div class="row justify-content-center" style="font-weight:700;">
                     <div class="col">
                         <a href="./index.html" class="nav-link">Home</a>
@@ -82,8 +102,23 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./pictures/comp_arch.jpg" class="imagepreview" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
